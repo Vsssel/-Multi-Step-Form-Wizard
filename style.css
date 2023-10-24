@@ -1,0 +1,159 @@
+body{
+    background-color: #fff;
+}
+h2{
+    font-size: 30px;
+}
+.wrapper{
+    background: #dbd8e3;
+    width: 450px;
+    height: 500px;
+    margin: 8% auto;
+    position: relative;
+    border-radius: 10px;
+    padding: 30px;
+    overflow: hidden;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+    
+}
+.wrapper form{
+    width: 90%;
+    position: absolute;
+    top: 100px;
+    transition: 0.4s;
+}
+i{
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+}
+.num-wrapper{
+    width: 40px;
+    height: 40px;
+    background-color: azure;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+h3{
+    font-size: 25px;
+}
+.fill-name{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+.button-wrapper{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    width: 200px;
+    height: 50px;
+    background-color:#2a2438;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+    color: #dbd8e3;
+}
+#first{
+    margin-top: 80px;
+}
+#second{
+    left: 550px;
+}
+#third{
+    margin-top: 130px;
+    left: 550px;
+}
+.communication{
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 2px solid #bbbbbb;
+}
+.btn-inside{
+    height: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.blue{
+    background-color: rgb(193, 230, 230);
+    border-color: rgb(90, 181, 226);
+}
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+.checkbox-container{
+    position: relative;
+    top: 20px;
+}
+.checkbox-container .checkmark {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 1px solid #333;
+}
+
+/* Position the checkmark inside the checkbox */
+.checkbox-container .checkmark:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 6px;
+    height: 5px;
+    border: solid rgb(101, 62, 62);
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+    display: none;
+}
+
+/* Show the checkmark when the checkbox is checked */
+.checkbox-container input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
+}
+.step-row{
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #dbd8e3;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+.filled{
+    background-color: #2a2438;
+    color: white;
+}
+.empty{
+    background-color: rgb(251, 194, 194);
+    border: 2px solid red;
+}

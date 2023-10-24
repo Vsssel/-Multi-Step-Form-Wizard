@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2926ee931f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-up From</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="step-row">
+            <div class="circle filled" id="circle1"><i class="fa-solid fa-1"></i></div>
+            <div class="circle" id="circle2"><i class="fa-solid fa-2"></i></div>
+            <div class="circle" id="circle3"><i class="fa-solid fa-3"></i></div>
+        </div>
+        <form id="first">
+            <p class="fill-name">Name</p>
+            <input type="text" placeholder="Name" id="name">
+            <p class="fill-name">Email</p>
+            <input type="text" placeholder="Email" id="email">
+            <p class="fill-name">Phone Number</p>
+            <input type="phone" id="phone">
+            <div class="button-wrapper">
+                <button class="nav" id="next1" type="button">NEXT</button>
+            </div>
+        </form>
+        <form id="second">
+            <p class="fill-name">Address</p>
+            <input type="text" placeholder="Address" id="address">
+            <p class="fill-name">City</p>
+            <input type="text" placeholder="City" id="city">
+            <p class="fill-name">State</p>
+            <input type="text" placeholder="State" id="state">
+            <p class="fill-name">Zip</p>
+            <input type="number" placeholder="Zip" id="zip">
+            <div class="button-wrapper">
+                <button class="nav" id="prev1" type="button">PREVIOUS</button>
+                <button class="nav" id="next2" type="button">NEXT</button>
+            </div>
+        </form>
+        <form id="third">
+            <p class="fill-name">Communication Preference</p>
+            <div class="button-wrapper">
+                <button onclick="changeColor(1)" type="button" class="communication" id="button1">
+                    <div class="btn-inside">
+                        <i class="fa-regular fa-envelope fa-2xl"></i>
+                        Email
+                    </div>
+                </button>
+                <button onclick="changeColor(2)" type="button" class="communication" id="button2">
+                    <div class="btn-inside">
+                        <i class="fa-solid fa-phone fa-2xl"></i>
+                        Phone
+                    </div>
+                </button>
+                <button onclick="changeColor(3)" type="button" class="communication" id="button3">
+                    <div class="btn-inside">
+                        <i class="fa-solid fa-paper-plane fa-2xl"></i>
+                        Mail
+                    </div>
+                </button>
+            </div>
+            <label class="checkbox-container">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Would you like to receive updates and perks
+            </label>
+            <div class="button-wrapper">
+                <button class="nav" id="prev2" type="button">PREVIOUS</button>
+                <button class="nav" id="submit" type="button">SUBMIT</button>
+            </div>
+            <p id="text"></p>
+        </form>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
